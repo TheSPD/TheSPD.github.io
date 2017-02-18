@@ -1,0 +1,71 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<dom-module id="my-about">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+      img {
+        display: inline-block;
+
+        width: 100%;
+
+        text-align: center;
+
+
+        border-radius: 50%;
+
+
+        font-size: 30px;
+        line-height: 64px;
+      }
+
+      .container{
+        @apply(--layout-horizontal);
+      }
+
+      .profile-image{
+        width: 400px;
+      }
+
+      .item{
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="container">
+        <div class="item profile-image">
+          <img src="http://eden.rutgers.edu/~sp1467/src/images/My-Image.jpg">
+        </div>
+        <div class="item">
+          <h1>About</h1>
+          <p>My name is Shreepad Patil, and I am a Graduate student at Department of Computer Sciences in Rutgers University. I completed my Undergraduate degree in Computer Engineering from University of Pune, India. </p>
+          <p>My speciality is Databases. Before joining Rutgers, I worked as an SAP HANA/BI consultant for three years. Recently, I have been working on web technologies, front-end as well as back-end.</p>
+          <p>When I am not working or studying, I like to enjoy music, reading and watching movies/TV shows. I also like to play soccer(but have not been playing much lately).</p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-about'
+    });
+  </script>
+</dom-module>
